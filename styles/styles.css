@@ -424,7 +424,7 @@ body .logo img {
     width: 100%;
     min-height: 100vh;
   }
-  .main-content .logo, .main-content .mobile-nav-bar, .main-content .toggle-btn {
+  .main-content .logo, .main-content .toggle-btn {
     display: block;
   }
   .main-content #header .nav-bar .nav-bar-links {
