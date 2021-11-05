@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project 1 </title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/2cce1b1722.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Enclose the Whole Content-->
+    <div class="enclose-content">
+        <!-- Side bar-->
+        <aside class="side-bar">
+            <!-- Logo-->
+            <div class="logo">
+                <!-- Temorary Logo-->
+                <img src="./assets/logo.svg" alt="temporary-logo photo">
+            </div>
+            <!-- Social Links-->
+            <div class="social-links">
+                <a href="#header">
+                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#header">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#header">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+        </aside>
+        <!-- Main Content-->
+        <div class="main-content">
+            <!-- Fixed navbar-->
+            <!-- Desktop version-->
+            <header id="header">
+                <!-- Logo + Links-->
+                <nav class="nav-bar">
+                     <!-- Logo-->
+                    <div class="logo">
+                        <!-- Temorary Logo-->
+                        <img src="./assets/logo.svg" alt="temporary-logo photo">
+                    </div>
+                    <ul class="nav-bar-links">
+                        <li class="nav-bar-link"><a href="#">HOME</a></li>
+                        <li class="nav-bar-link"><a href="#">BLOG</a></li>
+                        <li class="nav-bar-link"><a href="#">SHOP</a></li>
+                        <li class="nav-bar-link"><a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <!-- Icons-->
+                <div class="header-icons">
+                    <button class="icon">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="icon toggle-btn">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </header>
+             <!-- Mobile Navbar-->
+             <div class="mobile-nav-bar">
+                <ul class="nav-bar-links">
+                    <li class="nav-bar-link"><a href="#">HOME</a></li>
+                    <li class="nav-bar-link"><a href="#">BLOG</a></li>
+                    <li class="nav-bar-link"><a href="#">SHOP</a></li>
+                    <li class="nav-bar-link"><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+            <!-- MAin Page-->
+            <main id="main">
+                <div class="speed-quads">
+                    <div class="skate-pic-div">
+                   <!--    <img src="./assets/skatewithtext-removebg-preview.png" alt=""> -->
+                    </div>
+                    <!--
+                    <span class="speedy">SPEEDY</span>
+                    <span class="quads">QUADS</span>
+                    -->
+                </div>
+                <div class="product-desc">
+                    <!-- Name of product + rating-->
+                    <div class="product-rating">
+                        <h2 class="name">Smarty Speedy Quads</h2>
+                        <div class="rating-stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <!-- Brand-->
+                    <h3 class="brand">Product code:  <span class="brand-name"> 8494930</span></h3>
+                    <h4 class="price">3500 py6</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         At culpa earum ad temporibus quae ratione. 
+                         Recusandae delectus omnis deserunt aut, 
+                         voluptatum maiores quae? Deleniti cum non neque doloremque 
+                         libero expedita nam architecto similique? Obcaecati, labore harum? Minima amet earum similique!
+                    </p>
+                    <p class="offers"><a href="#">See more offers</a></p>
+                    <div class="variations-div">
+                        <p class="label">VARIATIONS:</p>
+                        <div class="blue circle-div active"></div>
+                        <div class="pink circle-div"></div>
+                        <div class="yellow circle-div"></div>
+                        <div class="gray circle-div"></div>
+
+                    </div>
+                    <form  id="form" class="form">
+                        <!-- Pick size-->
+                         <div class="sizes-div">
+                             <label for="cars">Choose a size:</label>
+                             <select id="size" name="size" size="1">
+                                 <option value="medium">M</option>
+                                 <option value="large">L</option>
+                                <option value="extralarge">XL</option>
+                                <option value="extraextralarge">XXL</option>
+                              </select>
+                         </div>
+                         <!-- Submit btn-->
+                         <button class="submit-btn">ADD TO CART</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- JavaScriptFile-->
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Capstone Project
+Using HTML,CSS,JavaScript,Sass
+Font icons used - fa-star,fa-toggle,fa-cart
+Images - icon,
+Font : Jost,Montestrat Bold ,Lato Regular
+Background
+Blue - #0392BF
+Pink - #ED48BA
+Yellow - #FBEC06
+Grey - #B3D4E0
+
+Side-bar color : #b4d6e4
+- Article on hashnode 
+- Mobile Responsiveness
+

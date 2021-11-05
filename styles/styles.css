@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Lato&family=Montserrat:wght@600&display=swap");
+/*font-family: 'Jost', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+:root {
+  --jostFamily:'Jost', sans-serif;
+  --latoFamily: 'Lato', sans-serif;
+  --montserratFamily:'Montserrat', sans-serif;
+  --blue: #0392BF;
+  --pink: #ED48BA;
+  --yellow: #FBEC06;
+  --gray: #B3D4E0;
+  --black:#010101;
+  --white:#fff;
+  --sidebar-color: #b4d6e4;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--latoFamily);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body button {
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+body .submit-btn {
+  background-color: var(--pink);
+  color: var(--white);
+  text-align: center;
+  min-width: 250px;
+  padding: 15px 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  display: block;
+}
+
+body .submit-btn:hover {
+  background-color: var(--white);
+  color: var(--pink);
+  font-weight: 600;
+}
+
+body .logo img {
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+.enclose-content {
+  position: relative;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  padding: 10px 0;
+  background-color: var(--sidebar-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-bar .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+}
+
+.side-bar .social-links a {
+  color: var(--pink);
+  display: inline-block;
+  text-align: center;
+}
+
+.side-bar .social-links a i {
+  font-size: 32px;
+}
+
+.grey-bg {
+  border-right: 1px solid var(--blue);
+}
+
+.main-content {
+  margin-left: 100px;
+  width: calc(100% - 100px);
+  min-height: 100vh;
+  background-color: var(--blue);
+  color: var(--white);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.main-content .logo, .main-content .mobile-nav-bar, .main-content .toggle-btn {
+  display: none;
+}
+
+.main-content #header {
+  width: 88%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content #header .header-icons i, .main-content #header .nav-bar {
+  font-size: 20px;
+}
+
+.main-content #header .nav-bar .nav-bar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  font-weight: 600;
+  font-family: var(--montserratFamily);
+}
+
+.main-content #header .nav-bar .nav-bar-links .nav-bar-link a {
+  color: white;
+}
+
+.main-content #header .header-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.main-content .mobile-nav-bar {
+  width: 88%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: #fff;
+  text-align: center;
+  font-family: var(--latoFamily);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.main-content .mobile-nav-bar a {
+  color: var(--blue);
+  display: inline-block;
+  padding: 12px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main-content .mobile-nav-bar a:hover {
+  color: #222;
+}
+
+.main-content .mobile-nav-bar::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+.main-content.pink .submit-btn {
+  background-color: var(--blue);
+  -webkit-transition: 1.3;
+  transition: 1.3;
+}
+
+.main-content.pink .submit-btn:hover {
+  background-color: var(--white);
+}
+
+#main {
+  width: 88%;
+  margin: 4rem auto 0;
+  padding-bottom: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+#main .speed-quads {
+  background-image: url("../assets/skatewithtext-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#main .product-desc .product-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#main .product-desc .product-rating .name {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#main .product-desc .product-rating .rating-stars .checked {
+  color: orange;
+}
+
+#main .product-desc .brand {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 1rem 0 2rem;
+}
+
+#main .product-desc .brand .brand-name {
+  display: inline-block;
+  padding-left: 5px;
+  color: orange;
+}
+
+#main .product-desc .price, #main .product-desc .variations-div .label, #main .product-desc .sizes-div label {
+  font-size: 24px;
+  margin: 1rem 0 2rem;
+}
+
+#main .product-desc .description {
+  max-width: 490px;
+  line-height: 1.4;
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}
+
+#main .product-desc .offers a {
+  color: orange;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#main .product-desc .variations-div {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+#main .product-desc .variations-div .label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main .product-desc .variations-div .circle-div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40px;
+  height: 40px;
+  margin-top: -9px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#main .product-desc .variations-div .active {
+  border: 2px solid #fff;
+}
+
+#main .product-desc .variations-div .blue {
+  background-color: var(--blue);
+}
+
+#main .product-desc .variations-div .pink {
+  background-color: var(--pink);
+}
+
+#main .product-desc .variations-div .yellow {
+  background-color: var(--yellow);
+}
+
+#main .product-desc .variations-div .gray {
+  background-color: var(--gray);
+}
+
+#main .product-desc .form .sizes-div label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#main .product-desc .form .sizes-div #size {
+  width: 190px;
+  padding: 10px 5px;
+  outline: none;
+  border: 1px solid var(--gray);
+}
+
+@media (max-width: 1220px) {
+  .product-desc .product-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .product-desc .product-rating .name {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .product-desc .product-rating .rating-stars {
+    font-size: 20px;
+  }
+  .product-desc .product-rating .rating-stars .checked {
+    color: orange;
+  }
+}
+
+@media (max-width: 1100px) {
+  #main .speed-quads {
+    background-image: url("../assets/skatewithtext-removebg-preview.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  body .submit-btn {
+    width: 100%;
+  }
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1.5rem;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  #main .speed-quads {
+    background-image: url("../assets/skatewithtext-removebg-preview.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  .side-bar {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-content .logo, .main-content .mobile-nav-bar, .main-content .toggle-btn {
+    display: block;
+  }
+  .main-content #header .nav-bar .nav-bar-links {
+    display: none;
+  }
+  .main-content #header .header-icons {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .main-content #header .header-icons i, .main-content #header .nav-bar {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 410px) {
+  .mobile-nav-bar,
+  #header,
+  #main {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #main {
+    display: block;
+  }
+  #header {
+    padding: 10px 6px !important;
+  }
+  #header .header-icons i, #header .nav-bar {
+    font-size: 24px !important;
+  }
+  .product-desc,
+  .mobile-nav-bar .nav-bar-links {
+    padding: 10px 20px !important;
+  }
+  .mobile-nav-bar::before {
+    display: none !important;
+  }
+  .variations-div {
+    display: block !important;
+  }
+  .variations-div .circle-div {
+    display: inline-block;
+    margin: 5px !important;
+  }
+  #main .product-desc .form .sizes-div label {
+    margin-right: 0px;
+  }
+  #main .product-desc .form .sizes-div #size {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
