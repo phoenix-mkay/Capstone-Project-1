@@ -424,22 +424,18 @@ body .logo img {
     width: 100%;
     min-height: 100vh;
   }
-  .main-content .logo, .main-content .toggle-btn {
+  .main-content .logo, .main-content .mobile-nav-bar, .main-content .toggle-btn {
     display: block;
   }
-  .main-content .m
-#header .nav-bar .nav-bar-links {
+  .main-content #header .nav-bar .nav-bar-links {
     display: none;
   }
-  .main-content .m
-#header .header-icons {
+  .main-content #header .header-icons {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .main-content .m
-#header .header-icons i, .main-content .m
-#header .nav-bar {
+  .main-content #header .header-icons i, .main-content #header .nav-bar {
     font-size: 30px;
   }
 }
